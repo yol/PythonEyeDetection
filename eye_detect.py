@@ -32,7 +32,7 @@ class Eye():
 def draw(photo):
     image = photo.copy()
     image_to_show = image
-    eyes = detect_objects(image, eyeCascadeClassifier)
+    eyes = detect_objects(image, eyeCascadeClassifier, divider=1)
     #################### Select the rightmost eye ##################
     rightmost_eye = None
     if eyes is not None:
